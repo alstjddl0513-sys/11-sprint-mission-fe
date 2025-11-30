@@ -1,1 +1,1 @@
-sprint미션1햣 요구사항입니다.
+sprint-mission 1 과제 수행입니다. 
