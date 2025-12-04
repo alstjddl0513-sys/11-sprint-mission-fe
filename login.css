@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "pretendard", sans-serif;
+  font-style: normal;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  padding: 23.1rem 64rem 28.4rem 64rem;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  width: 64rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  flex-shrink: 0;
+}
+
+a #logo {
+  width: 39.6rem;
+  height: 13.2rem;
+}
+
+.forms,
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+}
+/* 여기까지했음->폼만드는곳에서 인풋하는곳 하면 됨 */
+.input input {
+  width: 100%;
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.6rem;
+  padding: 1.6rem 12.4rem;
+  border-radius: 4rem;
+  background-color: #9ca3af;
+  color: #f3f4f6;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+}
+
+h1 {
+  padding: 1.6rem;
+  color: #1f2937;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+
+.easy-login {
+  width: 59.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
