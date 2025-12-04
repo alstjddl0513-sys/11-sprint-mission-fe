@@ -16,31 +16,43 @@
 
   <body>
     <header>
-      <a href="/">
-        <img src="./images/Group 19.svg" alt="판다마켓 홈으로" />
-      </a>
-      <a href="/login.html" class="login-button">로그인</a>
+      <div class="container">
+        <a href="/">
+          <img src="./images/Group 19.svg" alt="판다마켓 홈으로" />
+        </a>
+        <a href="/login.html" id="login-button" class="button">로그인</a>
+      </div>
     </header>
 
     <main>
-      <section class="top-banner">
+      <section id="top" class="banners">
         <div class="banner">
           <h1>
             일상의 모든 물건을
             <br />
             거래해보세요
           </h1>
-          <a href="/items.html" class="look-button">구경하러 가기</a>
+          <a href="/items.html" id="look-button" class="button">
+            구경하러 가기
+          </a>
         </div>
-        <img src="./images/Img_home_top.svg" alt="구경하러 가기" />
+        <img
+          src="./images/Img_home_top.svg"
+          alt="구경하러 가기"
+          class="look-img"
+        />
       </section>
 
       <section class="feature">
         <div class="content">
-          <img src="./images/Img_home_01.svg" alt="인기 상품" />
+          <img
+            src="./images/Img_home_01.svg"
+            alt="인기 상품"
+            class="section-img"
+          />
           <div class="description">
             <h2 class="tag">Hot item</h2>
-            <h1>
+            <h1 class="sum">
               인기 상품을
               <br />
               확인해 보세요
@@ -58,7 +70,7 @@
         <div class="content">
           <div class="description">
             <h2 class="tag">Search</h2>
-            <h1>
+            <h1 class="sum">
               구매를 원하는
               <br />
               상품을 검색하세요
@@ -69,16 +81,16 @@
               쉽게 찾아보세요
             </p>
           </div>
-          <img src="./images/Img_home_02.svg" alt="검색" />
+          <img src="./images/Img_home_02.svg" alt="검색" class="section-img" />
         </div>
       </section>
 
       <section class="feature">
         <div class="content">
-          <img src="./images/Img_home_03.svg" alt="등록" />
+          <img src="./images/Img_home_03.svg" alt="등록" class="section-img" />
           <div class="description">
             <h2 class="tag">register</h2>
-            <h1>
+            <h1 class="sum">
               판매를 원하는
               <br />
               상품을 등록하세요
@@ -92,35 +104,53 @@
         </div>
       </section>
 
-      <section class="bottom-banner">
+      <section id="bottom" class="banners">
         <h1>
           믿을 수 있는
           <br />
           판다마켓 중고거래
         </h1>
-        <img src="./images/Img_home_bottom.svg" alt="믿을 수 있는 판다마켓" />
+        <img
+          src="./images/Img_home_bottom.svg"
+          alt="믿을 수 있는 판다마켓"
+          class="truth-img"
+        />
       </section>
     </main>
 
     <footer>
-      <div>@codeit-2024</div>
-      <div class="footermenu">
-        <a href="/privacy.html">PrivacyPolicy</a>
-        <a href="/faq.html">FAQ</a>
-      </div>
-      <div class="social-site">
-        <a href="https://www.facebook.com/">
-          <img src="/images/icon/facebook.svg" alt="페이스북" />
-        </a>
-        <a href="https://www.twitter.com/">
-          <img src="/images/icon/ic_twitter.svg" alt="트위터" />
-        </a>
-        <a href="https://www.youtube.com/">
-          <img src="/images/icon/youtube.svg" alt="유튜브" />
-        </a>
-        <a href="https://www.instagram.com/">
-          <img src="/images/icon/ic_instagram.svg" alt="인스타그램" />
-        </a>
+      <div class="foot">
+        <div class="codeit-foot">@codeit-2024</div>
+        <div class="footermenu">
+          <a href="/privacy.html">PrivacyPolicy</a>
+          <a href="/faq.html">FAQ</a>
+        </div>
+        <div class="social-site">
+          <a href="https://www.facebook.com/">
+            <img
+              src="/images/icon/facebook.svg"
+              alt="페이스북"
+              target="blank"
+            />
+          </a>
+          <a href="https://www.twitter.com/">
+            <img
+              src="/images/icon/ic_twitter.svg"
+              alt="트위터"
+              target="blank"
+            />
+          </a>
+          <a href="https://www.youtube.com/">
+            <img src="/images/icon/youtube.svg" alt="유튜브" target="blank" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img
+              src="/images/icon/ic_instagram.svg"
+              alt="인스타그램"
+              target="blank"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   </body>
