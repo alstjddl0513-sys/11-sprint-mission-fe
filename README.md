@@ -7,7 +7,7 @@
 <br>
 
 <!-- 버전 수정필요!-->
-## 🔗 배포 링크 (v2.2.0) 
+## 🔗 배포 링크 (v2.2.1) 
 👉 [웹사이트 보러가기](https://www.sprint-project-min.netlify.app)
 
 <br>
