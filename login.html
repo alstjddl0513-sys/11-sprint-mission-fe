@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/login.css" />
   </head>
 
-  <body>
+  <body id="login_page">
     <main>
       <a href="/">
         <img src="/images/Group 19.svg" alt="판다마켓 홈으로" id="logo"/ >
@@ -22,7 +22,7 @@
 
       <div class="forms">
         <form>
-          <div class="input">
+          <div class="inputs">
             <label for="login-email">이메일</label>
             <br />
             <input
@@ -30,9 +30,10 @@
               name="email"
               type="email"
               placeholder="이메일을 입력해주세요"
+              autocomplete="email"
             />
           </div>
-          <div class="input">
+          <div class="inputs">
             <label for="login-password">비밀번호</label>
             <br />
             <input
@@ -44,11 +45,11 @@
           </div>
         </form>
         <div class="login-button">로그인</div>
-        <!-- 일단 여기까지 -->
       </div>
+
       <div class="easy-login">
         <h1>간편 로그인하기</h1>
-        <div>
+        <div class="icons">
           <a href="https://www.google.com/">
             <img src="/images/icon/google.svg" alt="구글" target="_blank" />
           </a>
@@ -61,6 +62,7 @@
           </a>
         </div>
       </div>
+
       <div class="signup">
         판다마켓이 처음이신가요?
         <a href="/signup.html">회원가입</a>
