@@ -1,10 +1,10 @@
 import Nav from './components/Nav';
 import BestProductList from './components/BestProductList';
-import SaleProductList from './components/SaleProductList';
-import SearchBar from './components/SearchBar';
-import RegisterButton from './components/RegisterButton';
-import SortDropdown from './components/SortDropdown';
-import Pagination from './components/Pagination';
+// import SaleProductList from './components/SaleProductList';
+// import SearchBar from './components/SearchBar';
+// import RegisterButton from './components/RegisterButton';
+// import SortDropdown from './components/SortDropdown';
+// import Pagination from './components/Pagination';
 import Footer from './components/Footer';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Nav />
       <main>
         <BestProductList />
-        <section>
+        {/* <section>
           <div>
             <SearchBar />
             <RegisterButton />
@@ -21,7 +21,7 @@ function App() {
           </div>
           <SaleProductList />
           <Pagination />
-        </section>
+        </section> */}
       </main>
       <Footer />
     </div>
