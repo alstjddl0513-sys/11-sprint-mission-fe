@@ -3,7 +3,13 @@ import { getProducts } from '../apis/products';
 import { GeneralProductCard } from './ProductCard';
 import styles from './SaleProductList.module.css';
 
-function SaleProductList({ keyword, orderBy }) {
+function SaleProductList({
+  keyword,
+  orderBy,
+  page,
+  pageSize,
+  totalCountChange,
+}) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -12,17 +18,18 @@ function SaleProductList({ keyword, orderBy }) {
         const data = await getProducts({
           keyword,
           orderBy,
-          page: 1,
-          pageSize: 10,
+          page,
+          pageSize,
         });
         setItems(data.list);
+        totalCountChange(data.totalCount);
       } catch (error) {
         console.error(`상품 로딩 실패:`, error);
       }
     };
 
     handleSaleProducts();
-  }, [keyword, orderBy]);
+  }, [keyword, orderBy, page, pageSize, totalCountChange]);
 
   return (
     <div className={styles.saleCards}>

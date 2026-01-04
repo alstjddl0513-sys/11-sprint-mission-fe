@@ -1,5 +1,17 @@
 .saleCards {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 40px 24px;
+  gap: 40px 24px; /* Desktop */
+}
+
+@media (max-width: 744px) {
+  .saleCards {
+    grid-template-columns: repeat(3, 1fr);
+  } /* Tablet */
+}
+
+@media (max-width: 375px) {
+  .saleCards {
+    grid-template-columns: repeat(2, 1fr);
+  } /* Mobile */
 }

@@ -16,5 +16,17 @@
 .card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 24px; /* Desktop */
+}
+
+@media (max-width: 744px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  } /* Tablet */
+}
+
+@media (max-width: 375px) {
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+  } /* Mobile */
 }
