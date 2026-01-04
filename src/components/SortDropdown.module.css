@@ -1,0 +1,20 @@
+.sortSelect {
+  width: 130px;
+  height: 42px;
+  padding: 12px 20px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background-color: #fff;
+
+  appearance: none;
+  cursor: pointer;
+  background-image: url('../assets/ic_arrow_down.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 24px;
+}
+
+.sortSelect:focus {
+  outline: none;
+}

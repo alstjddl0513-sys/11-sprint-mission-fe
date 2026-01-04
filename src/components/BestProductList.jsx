@@ -12,7 +12,7 @@ function BestProductList() {
         const data = await getBestProducts({});
         setItems(data.list);
       } catch (error) {
-        console.error(`상품 로딩 실패:`, error);
+        console.error(`베스트 상품 로딩 실패:`, error);
       }
     };
 
@@ -24,7 +24,7 @@ function BestProductList() {
       <h1 className={styles.BestProduct}>베스트 상품</h1>
       <div className={styles.card}>
         {Items.map((item) => (
-          <BestProductCard key={item.id} item={item} />
+          <BestProductCard key={item.id} BestItem={item} />
         ))}
       </div>
     </div>

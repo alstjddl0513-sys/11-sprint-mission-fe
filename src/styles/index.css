@@ -13,3 +13,41 @@ main {
   gap: 40px;
   margin: 26px 360px 383px;
 }
+
+section {
+  width: 100%;
+}
+
+.saleProducts {
+  color: #111827;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.saleListNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.saleBarMenus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.saleBarMenus > a {
+  display: flex;
+  height: 42px;
+  padding: 12px 23px;
+  text-decoration: none;
+  border-radius: 8px;
+  background: #3692ff;
+  color: #f3f4f6;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}

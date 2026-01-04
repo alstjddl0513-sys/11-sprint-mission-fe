@@ -6,12 +6,12 @@
 }
 
 .cardImage {
-  width: 282px;  
-  height: 282px;
+  width: 100%;
+  height: 100%;
 }
 
 .cardImage img {
-  width: 100%;  
+  width: 100%;
   height: 100%;
 }
 
