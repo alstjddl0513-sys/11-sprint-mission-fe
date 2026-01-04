@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getBestProducts } from '../apis/products';
 import { BestProductCard } from './ProductCard';
+import styles from './BestProductList.module.css';
 
 function BestProductList() {
   const [Items, setItems] = useState([]);
@@ -19,14 +20,14 @@ function BestProductList() {
   }, []);
 
   return (
-    <>
-      <h1>베스트 상품</h1>
-      <div>
+    <div className={styles.BestProducts}>
+      <h1 className={styles.BestProduct}>베스트 상품</h1>
+      <div className={styles.card}>
         {Items.map((item) => (
           <BestProductCard key={item.id} item={item} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

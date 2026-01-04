@@ -1,5 +1,5 @@
 import heart from '../assets/ic_heart.svg';
-// import styles from './ProductCard.module.css';
+import styles from './ProductCard.module.css';
 
 export function BestProductCard({ item }) {
   if (!item) {
@@ -7,14 +7,14 @@ export function BestProductCard({ item }) {
   }
 
   return (
-    <div>
-      <div>
+    <div className={styles.cardContainer}>
+      <div className={styles.cardImage}>
         <img src={item.images[0]} alt={item.name} />
       </div>
-      <div>
+      <div className={styles.cardDescription}>
         <p>{item.name}</p>
-        <p>{item.price.toLocaleString()}원</p>
-        <p>
+        <p className={styles.productPrice}>{item.price.toLocaleString()}원</p>
+        <p className={styles.productLikes}>
           <img src={heart} alt="좋아요" />
           {item.favoriteCount}
         </p>

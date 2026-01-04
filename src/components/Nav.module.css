@@ -8,6 +8,12 @@ a {
   align-items: center;
   padding: 0px 200px;
   height: 68px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #dfdfdf;
+  background: #fff;
+  width: 100%;
 }
 
 .navMenu {
@@ -29,7 +35,6 @@ a {
   align-items: center;
   gap: 8.592px;
   flex-shrink: 0;
-  
 }
 
 .navLists {
