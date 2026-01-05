@@ -19,3 +19,17 @@
   font-weight: 400;
   border: none;
 }
+
+/* Tablet */
+@media (max-width: 1199px) {
+  .barContainer {
+    width: 242px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .barContainer {
+    width: 288px;
+  }
+}

@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav {
@@ -69,4 +70,35 @@ a {
   font-style: normal;
   font-weight: 600;
   color: #f3f4f6;
+}
+
+/* Tablet */
+@media (max-width: 1199px) {
+  .nav {
+    padding: 0px 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .nav {
+    padding: 0px 16px;
+  }
+
+  .navItems {
+    padding: 25px 0px 25px 8px;
+  }
+
+  .navMenu {
+    gap: 0px;
+  }
+
+  .logo {
+    font-size: 20.202px;
+    width: 100%;
+  }
+
+  .logoImage {
+    display: none;
+  }
 }

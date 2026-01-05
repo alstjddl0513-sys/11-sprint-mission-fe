@@ -6,12 +6,12 @@ export function usePageSize() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      if (width > 744) {
-        setPageSize(10);
-      } else if (width > 375) {
+      if (width <= 768) {
+        setPageSize(4);
+      } else if (width <= 1200) {
         setPageSize(6);
       } else {
-        setPageSize(4);
+        setPageSize(10);
       }
     };
 

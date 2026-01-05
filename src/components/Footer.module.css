@@ -44,3 +44,37 @@ a {
   align-items: center;
   gap: 12px;
 }
+
+/* Tablet */
+@media (max-width: 1199px) {
+  .footer {
+    padding: 32px 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .footer {
+    padding: 32px 16px;
+    height: auto;
+  }
+
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 0;
+  }
+
+  .codeit {
+    order: 2;
+    width: 100%;
+  }
+
+  .footerMenu {
+    order: 1;
+  }
+
+  .icons {
+    order: 1;
+  }
+}

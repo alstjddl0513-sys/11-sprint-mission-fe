@@ -13,20 +13,32 @@
   font-weight: 700;
 }
 
+/* Desktop */
 .card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px; /* Desktop */
+  gap: 24px;
 }
 
-@media (max-width: 744px) {
+/* Tablet */
+@media (max-width: 1199px) {
   .card {
     grid-template-columns: repeat(2, 1fr);
-  } /* Tablet */
+    
+  }
+
+  .card > *:nth-child(n+3) {
+    display: none;
+  }
 }
 
-@media (max-width: 375px) {
+/* Mobile */
+@media (max-width: 767px) {
   .card {
     grid-template-columns: repeat(1, 1fr);
-  } /* Mobile */
+  }
+
+  .card > *:nth-child(n+2) {
+    display: none;
+  }
 }

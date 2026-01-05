@@ -1,17 +1,22 @@
+/* Desktop */
 .saleCards {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 40px 24px; /* Desktop */
+  gap: 40px 24px;
 }
 
-@media (max-width: 744px) {
+/* Tablet */
+@media (max-width: 1199px) {
   .saleCards {
     grid-template-columns: repeat(3, 1fr);
-  } /* Tablet */
+    gap: 40px 16px;
+  }
 }
 
-@media (max-width: 375px) {
+/* Mobile */
+@media (max-width: 767px) {
   .saleCards {
     grid-template-columns: repeat(2, 1fr);
-  } /* Mobile */
+    gap: 32px 8px;
+  }
 }
